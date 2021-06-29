@@ -11,13 +11,14 @@ exit
 
 else
 
-# I am interested in these sources, at least initially
-authfree_sources=("bing" "bufferoverun" "certspotter" "crtsh" "dnsdumpster" "duckduckgo" "exalead" "google" "hackertarget" "linkedin" "linkedin_links" "netcraft" "omnisint" "otx" "rapiddns" "sublist3r" "threatcrowd" "threatminer" "urlscan" "virustotal" "yahoo" "securityTrails")
+# declare array of auth-free sources; in bash arrays are space seperated quoted strings in ()
+authfree_sources=("bing" "bufferoverun" "crtsh" "dnsdumpster" "duckduckgo" "exalead" "google" "hackertarget" "linkedin" "linkedin_links" "netcraft" "omnisint" "otx" "rapiddns" "sublist3r" "threatcrowd" "threatminer" "urlscan" "virustotal" "yahoo" "securityTrails")
 
-# I don't API keys for these yet
+# these discovery sources require API-key authorization
 authd_sources=("bingapi" "censys" "github-code" "hunter" "intelx" "pentesttools" "projectdiscovery" "securityTrails" "spyse")
 
-# Not initially interested in these sources
+# I don't often use these sources
+certspotter=("certspotter") # query unauthorized or expiring certs
 exalead=("exalead") # a public search engine
 baidu=("baidu") # a public search engine
 qwant=("qwant") # a public search engine
