@@ -23,7 +23,7 @@ echo "Nmap detected" $(expr $commas + 1) "open ports."
 printf '\n'
 
 # display detected ports
-openPorts=$(echo "PORTS:" $ports | tr ',' '/')
+openPorts=$(echo "PORTS:" $ports)
 echo $openPorts
 portsLen=${#openPorts}
 
