@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# for Bug Bounties With Bash - VirSecCon2020 Talk
+# for Bug Bounties With Bash - VirSecCon2020 Talk, By TomNomNom
 # https://www.youtube.com/watch?v=s9w0KutMorE
 # not an original work
 #######################
