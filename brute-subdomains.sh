@@ -4,6 +4,7 @@
 # not an original work
 #######################
 # bash-based subdomain brute-force enumeration script
+# usage: ./brute-subdomains [domain] < [wordlist]
 
 domain=$1
 
