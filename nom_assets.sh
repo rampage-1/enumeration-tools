@@ -2,7 +2,7 @@
 # for https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course
 # not an original work
 #
-# harvest potential subdomains with tomnomnom's Assetfinder
+# harvest potential subdomains with tomnomnom's Assetfinder and Httprobe
 # https://github.com/tomnomnom/assetfinder
 # Usage: ./nom_assets.sh <domain>
 
@@ -25,7 +25,5 @@ cat $dir/temp-output | sort -u >> $dir/assetfinder_found.txt && rm $dir/temp-out
 echo "[+] Probing for live domains ... "
 
 cat $dir/assetfinder_found.txt | httprobe -prefer-https | sort -u >> $dir/live-endpoints.txt
-# the lecture script checked https but I've decided to collect both
 
 echo "[+] Done! "
-
